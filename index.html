@@ -16,11 +16,20 @@
 <body>
     <div ng-controller="MainController as main">
         <h2>{{message}}</h2>
+        
         <div>
-            <div>First name:{{person.firstName}}</div>
-            <div>Last name:{{person.lastName}}</div>
+            {{error}}
+        </div>
+
+        <div>
             <div>
-                <img src="{{person.imageSrc}}" title="{{person.firstName}} {{person.lastName}}">
+                Name : {{user.name}}
+            </div>
+            <div>
+                Location : {{user.location }}
+            </div>
+            <div>
+                <img ng-src="{{user.avatar_url}}" title="{{user.name}}">
             </div>
         </div>
     </div>
